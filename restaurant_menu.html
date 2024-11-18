@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chez Popo - Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8b400;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .menu-item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f8b400;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://marketplace.canva.com/EAGFv9wbcDA/1/0/1600w/canva-orange-and-white-modern-asian-food-restaurant-outdoor-banner-kediZUS4TYY.jpg" alt="Restaurant Banner" id="header-img">
+        <h1>Chez Popo</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#order-form">Commander</a>
+        </nav>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <article class="menu-item">
+                <img src="https://cache.marieclaire.fr/data/photo/w1000_c17/cuisine/4e/pateaucitronal62-fotolia.jpg" alt="Plat 1">
+                <div>
+                    <h3>Pâtes Alfredo</h3>
+                    <p>Délicieuses pâtes avec une sauce crémeuse et des herbes fraîches. <em>Prix : 12€</em></p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="https://assets.afcdn.com/recipe/20230623/143791_w1024h1024c1cx960cy540cxt0cyt0cxb1920cyb1080.jpg" alt="Plat 2">
+                <div>
+                    <h3>Pizza Margherita</h3>
+                    <p>Pizza classique avec sauce tomate, mozzarella et basilic. <em>Prix : 10€</em></p>
+                </div>
+            </article>
+            <article class="menu-item">
+                <img src="https://burgerkingfrance.twic.pics/img/products/f/37/f378eae5-61a3-459f-b40f-4057b4f88e96_?twic=v1/contain=700x700" alt="Plat 3">
+                <div>
+                    <h3>Burger Maison</h3>
+                    <p>Un burger gourmand avec steak frais et frites croustillantes. <em>Prix : 14€</em></p>
+                </div>
+            </article>
+        </section>
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form>
+                <label for="pates">Pâtes Alfredo :</label>
+                <input type="number" id="pates" name="pates" min="0" value="0"><br><br>
+
+                <label for="pizza">Pizza Margherita :</label>
+                <input type="number" id="pizza" name="pizza" min="0" value="0"><br><br>
+
+                <label for="burger">Burger Maison :</label>
+                <input type="number" id="burger" name="burger" min="0" value="0"><br><br>
+
+                <label for="sides">Accompagnements :</label><br>
+                <input type="checkbox" id="fries" name="sides" value="frites">
+                <label for="fries">Frites</label><br>
+                <input type="checkbox" id="salad" name="sides" value="salade">
+                <label for="salad">Salade</label><br><br>
+
+                <label for="requests">Demande spéciale :</label><br>
+                <textarea id="requests" name="requests" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Made with love by @popodevfivem81532</p>
+    </footer>
+</body>
+</html>
